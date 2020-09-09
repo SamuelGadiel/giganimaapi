@@ -1,0 +1,50 @@
+.Logo {
+  width: 128px;
+  position: relative;
+  top: 20px;
+  left: 50%;
+}
+
+.NavLateral {
+  height: 100%;
+  width: 210px;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+
+  background: var(--purple);
+  border-right: 3px solid var(--blueish);
+}
+
+body {
+  --bodyPaddingTop: 94px;
+  padding-top: var(--bodyPaddingTop);
+}
+
+.ButtonLink {
+  color: var(--white);
+  border: 1px solid var(--white);
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 16px 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity .3s;
+}
+.ButtonLink:hover,
+.ButtonLink:focus {
+  opacity: .5;
+}
