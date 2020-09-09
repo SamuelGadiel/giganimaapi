@@ -1,27 +1,48 @@
 .Logo {
-  width: 128px;
+  width: 96px;
   position: relative;
-  top: 20px;
-  left: 50%;
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+    
+  /* top: 20px;
+  left: 41px; */
+
 }
+
+.Quadrado{
+  height: 136px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.3) ;
+}
+
+.Quadrado a{
+  display: contents;
+}
+
+h3{
+  padding-left: 35px;
+  color: var(--white);
+}
+
 
 .NavLateral {
   height: 100%;
   width: 210px;
   z-index: 100;
 
-  display: flex;
+  display: inline-block;
   justify-content: space-between;
-  align-items: center;
+  
 
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
 
-
   background: var(--purple);
-  border-right: 3px solid var(--blueish);
 }
 
 body {

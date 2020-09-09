@@ -5,6 +5,7 @@
 
 :root {
   --purple:#8318B4;
+  --purpleDark:#36117E;
   --blueish:#2947a8;
   --primary: #2A7AE4;
   --black: #000000;
@@ -20,6 +21,10 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+
+body{
+  background: var(--purpleDark);
 }
 
 a {
