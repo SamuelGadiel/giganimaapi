@@ -1,0 +1,51 @@
+Lista Completa
+  
+  Clicando no "#"
+
+    http://one.zetai.info/odata/Animesdb?$filter=substringof('',Nome)&$select=Id,Nome,Imagem&$orderby=Nome&$skip=0&$inlinecount=allpages
+
+  Clicando numa letra (Nesse caso A)
+
+    http://one.zetai.info/odata/Animesdb?$filter=startswith(Nome,'A')&$select=Id,Nome,Imagem&$orderby=Nome&$skip=0&$inlinecount=allpages
+
+Mais atualizados
+
+  http://one.zetai.info/api/animes/recentes
+
+Mais Assistidos
+
+  http://one.zetai.info/odata/Animesdb?$select=Id,Nome,Imagem,Rank&$orderby=Rank desc&$skip=0&$inlinecount=allpages
+
+Nova Temporada (Lançamentos)
+
+  http://one.zetai.info/api/animes/lancamento
+
+Categorias
+
+  http://one.zetai.info/api/categoria
+
+  Clicando em uma categoria
+    http://one.zetai.info/odata/Animesdb?$filter=substringof('Shounen',Categoria)&$select=Id,Nome,Imagem,Categoria&$orderby=Nome&$skip=0&$inlinecount=allpages
+
+Clicando em um Ano
+
+  http://one.zetai.info/odata/Animesdb?$filter=substringof('2020',Ano)&$select=Id,Nome,Imagem,Ano&$orderby=Nome&$skip=0&$inlinecount=allpages
+
+
+Clicando num anime (Nesse caso Naruto Shippuuden)
+
+  http://one.zetai.info/odata/Animesdb?$filter=Id eq 111
+
+  Clicando em Episódios
+
+    http://one.zetai.info/api/episodioexes/111
+
+    Clicando em um episódio específico
+
+      http://one.zetai.info/api/episodioexes/links?id=177209
+
+      http://one.zetai.info/api/animes/addrank/111
+
+Fazendo uma busca
+
+  http://one.zetai.info/odata/Animesdb?$filter=substringof('naruto', Nome)&$select=Id,Nome,Imagem&$orderby=Nome&$skip=0&$inlinecount=allpages
