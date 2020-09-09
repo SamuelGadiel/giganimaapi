@@ -2,9 +2,9 @@ import React from 'react';
 
 function ListaDados(props) {
   return (
-    <h3>
-      {props.dado}
-    </h3>
+    <a href="/">
+      <h3>{props.dado}</h3>
+    </a>
   );
 }
 
