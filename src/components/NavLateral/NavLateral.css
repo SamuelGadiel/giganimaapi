@@ -1,5 +1,5 @@
 .Logo {
-  width: 92px;
+  width: 83px;
   margin: auto;
     
   /* top: 20px;
@@ -9,15 +9,15 @@
 
 .icon{
   margin-top : 1px;
-  margin-right : 20px;
+  margin-right : 18px;
   transform: scale(1.2);
 }
 
 .Quadrado{
-  height: 120px;
+  height: 108px;
   /* position: relative; */
   background: rgba(0, 0, 0, 0.2);
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   display: flex;
   /* justify-items: center;
   align-items: center; */
@@ -33,10 +33,10 @@ a{
 }
 
 .ListaDados{
-  font-size: 18px;
-  padding-left: 15px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  font-size: 16px;
+  padding-left: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--white);
   display: flex;
   font-weight: 600;
@@ -51,7 +51,7 @@ a{
 
 .NavLateral {
   height: 100%;
-  width: 210px;
+  width: 189px;
   z-index: 100;  
 
   position: fixed;

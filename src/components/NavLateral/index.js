@@ -11,9 +11,7 @@ function NavLateral() {
           <img className="Logo" src={Logo} alt="GiganimaLogo" />
         </a>
       </div>
-
       <ListaDados className="ListaDados" />
-
     </nav>
   );
 }
