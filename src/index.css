@@ -4,6 +4,8 @@
 }
 
 :root {
+  --backEnd: #118642;
+  --navbar:#4e3535;
   --purple:#8318B4;
   --purpleDark:#36117E;
   --blueish:#2947a8;
@@ -14,7 +16,6 @@
   --grayMedium: #e5e5e5; 
   --white: #FFFFFF;
   --frontEnd: #6BD1FF;
-  --backEnd: #00C86F;
 }
 
 html,
