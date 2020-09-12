@@ -1,0 +1,11 @@
+.BarraBusca{
+  height: 50px;
+  background: #51A018;
+  overflow: hidden;
+}
+
+.campoBusca{
+  background: white;
+  width: 1000px;
+  height: 25px;
+}

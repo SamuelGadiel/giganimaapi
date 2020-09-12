@@ -3,6 +3,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.App{
+  overflow: hidden;
+}
+
 :root {
   --backEnd: #118642;
   --navbar:#4e3535;

@@ -47,24 +47,11 @@ a{
   /* background: #ba11c0; */
 }
 
-
-
 .NavLateral {
-  height: 100%;
+  height: 100vh;
   width: 189px;
-  z-index: 100;  
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
+  float: left;
   background: var(--navbar);
-}
-
-body {
-  --bodyPaddingTop: 94px;
-  padding-top: var(--bodyPaddingTop);
 }
 
 .ButtonLink {
