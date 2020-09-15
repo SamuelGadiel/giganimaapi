@@ -6,8 +6,10 @@ function BarraBusca() {
   return (
     <div className="BarraBusca">
       <div className="campoBusca">
-        <MdSearch className="iconeBusca" />
-        <span className="textoBusca">Buscar</span>
+        <form action="">
+          <input placeholder="Buscar" className="campoBusca" type="text" />
+          <MdSearch className="iconeBusca" />
+        </form>
       </div>
     </div>
   );

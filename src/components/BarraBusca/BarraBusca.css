@@ -2,10 +2,16 @@
   height: 50px;
   background: #51A018;
   overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 .campoBusca{
-  background: white;
-  width: 1000px;
-  height: 25px;
+  /* background: white;
+  width: 700px;
+  height: 25px; */
+  margin: auto;
+  /* text-align: center; */
 }
