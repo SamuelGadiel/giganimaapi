@@ -1,18 +1,18 @@
 import React from 'react';
 import Logo from '../../../src/assets/img/Logo.png';
-import "./NavLateral.css"
 import ListaDados from '../ListaDados';
+import { NavBarLateral, Quadrado, LogoImg } from './styles';
 
 function NavLateral() {
   return (
-    <nav className="NavLateral">
-      <div className="Quadrado">
-        <a href="/">
-          <img className="Logo" src={Logo} alt="GiganimaLogo" />
-        </a>
-      </div>
-      <ListaDados className="ListaDados" />
-    </nav>
+    <NavBarLateral>
+      <Quadrado>
+        <Quadrado.a href="/">
+          <LogoImg src={Logo} alt="GiganimaLogo" />
+        </Quadrado.a>
+      </Quadrado>
+      <ListaDados />
+    </NavBarLateral>
   );
 }
 

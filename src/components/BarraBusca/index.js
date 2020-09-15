@@ -1,18 +1,18 @@
 import React from 'react';
-import './BarraBusca.css'
 import { MdSearch } from 'react-icons/md';
+import { BarraBusca, CampoBusca } from './styles';
 
-function BarraBusca() {
+function Busca() {
   return (
-    <div className="BarraBusca">
-      <div className="campoBusca">
+    <BarraBusca>
+      <CampoBusca>
         <form action="">
-          <input placeholder="Buscar" className="campoBusca" type="text" />
+          <input placeholder="Buscar" type="text" />
           <MdSearch className="iconeBusca" />
         </form>
-      </div>
-    </div>
+      </CampoBusca>
+    </BarraBusca>
   );
 }
 
-export default BarraBusca;
+export default Busca;

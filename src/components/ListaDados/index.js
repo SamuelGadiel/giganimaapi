@@ -1,4 +1,5 @@
 import React from 'react';
+import { ItemsLista, Icon } from './styles';
 import { MdHome, MdUpdate, MdStar, MdLibraryBooks } from 'react-icons/md';
 import { FaListOl } from 'react-icons/fa';
 import { GoPlus } from 'react-icons/go';
@@ -14,10 +15,10 @@ function ListaDados() {
     <a href="/">
       {listaDeDados.map((texto, idTexto) => {
         return (
-          <span key={`texto_${idTexto}`} className="ListaDados">
-            <span key={`icon_${idTexto}`} className="icon">{icons[idTexto]}</span>
+          <ItemsLista key={`texto_${idTexto}`}>
+            <Icon key={`icon_${idTexto}`}> {icons[idTexto]} </Icon>
             {texto}
-          </span>)
+          </ ItemsLista>)
       })}
     </a>
   );
