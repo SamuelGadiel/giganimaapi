@@ -5,8 +5,10 @@ export const NavBarLateral = styled.nav`
   width: 190px;
   background: var(--navbar);
   position: fixed;
+  
+  transition-duration: 0.6s;
+
   transform: ${props => props.show ? "translateX(0)" : "translateX(-190px)"};
-  transition-duration: 0.4s;
 `;
 
 export const Quadrado = styled.div`
