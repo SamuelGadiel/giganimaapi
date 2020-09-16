@@ -1,15 +1,18 @@
 import React from 'react';
 import { MdSearch } from 'react-icons/md';
-import { BarraBusca, CampoBusca } from './styles';
+import { BarraBusca, CampoBusca, Formulario, Input, IconeBuscar, BotaoBusca } from './styles';
 
 function Busca() {
   return (
     <BarraBusca>
       <CampoBusca>
-        <form action="">
-          <input placeholder="Buscar" type="text" />
-          <MdSearch className="iconeBusca" />
-        </form>
+        <Formulario action="">
+          <Input placeholder="Buscar" type="text" />
+          <BotaoBusca>
+            <MdSearch />
+            {/* <IconeBuscar /> */}
+          </BotaoBusca>
+        </Formulario>
       </CampoBusca>
     </BarraBusca>
   );
