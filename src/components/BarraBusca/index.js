@@ -10,7 +10,6 @@ function Busca() {
           <Input placeholder="Buscar" type="text" />
           <BotaoBusca>
             <MdSearch />
-            {/* <IconeBuscar /> */}
           </BotaoBusca>
         </Formulario>
       </CampoBusca>
