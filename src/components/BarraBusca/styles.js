@@ -1,3 +1,4 @@
+import { MdMenu } from 'react-icons/md';
 import styled from 'styled-components';
 
 const tamanhoBorda = "5px";
@@ -10,6 +11,20 @@ export const BarraBusca = styled.div`
   display: flex;
   align-items: center;
   justify-items: center;
+
+  position: ${props => props.show ? "absolute" : "static"};
+
+  right: ${props => props.show ? "0" : "auto"};
+
+  width: ${props => props.show ? "calc(100vw - 190px)" : "100vw"};
+`;
+
+export const Menu = styled(MdMenu)`
+  color: white;
+  margin-left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+
 `;
 
 export const CampoBusca = styled.div`

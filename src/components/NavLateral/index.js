@@ -3,13 +3,13 @@ import Logo from '../../../src/assets/img/Logo.png';
 import ListaDados from '../ListaDados';
 import { NavBarLateral, Quadrado, LogoImg } from './styles';
 
-function NavLateral() {
+function NavLateral({ clicked }) {
   return (
-    <NavBarLateral>
+    <NavBarLateral show={clicked}>
       <Quadrado>
-        <Quadrado.a href="/">
+        <a href="/">
           <LogoImg src={Logo} alt="GiganimaLogo" />
-        </Quadrado.a>
+        </a>
       </Quadrado>
       <ListaDados />
     </NavBarLateral>

@@ -1,10 +1,12 @@
 import React from 'react';
 import { MdSearch } from 'react-icons/md';
-import { BarraBusca, CampoBusca, Formulario, Input, IconeBuscar, BotaoBusca } from './styles';
+import { Menu, BarraBusca, CampoBusca, Formulario, Input, BotaoBusca } from './styles';
 
-function Busca() {
+
+function Busca({ clicked, clickEvent }) {
   return (
-    <BarraBusca>
+    <BarraBusca show={clicked}>
+      <Menu onClick={clickEvent} />
       <CampoBusca>
         <Formulario action="">
           <Input placeholder="Buscar" type="text" />
