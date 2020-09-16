@@ -27,6 +27,7 @@ export const Input = styled.input`
   padding: 0px 0px 0px 20px;
   flex-grow: 1;
   border: none;
+  outline: none;
 
   &::placeholder{
     color: #999;
@@ -35,8 +36,9 @@ export const Input = styled.input`
 
 export const BotaoBusca = styled.button`
   border: none;
+  outline: none;
   cursor: pointer;
-  height: 30px;
+  height: 35px;
   width: 50px; 
   padding:0;
   display:flex;
