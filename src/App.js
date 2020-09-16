@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavLateral clicked={menuClick} />
+      {/* <NavLateral clicked={menuClick} /> */}
       <Busca clicked={menuClick} clickEvent={() => setMenuClick(!menuClick)} />
       {/* <Busca clickEvent={() => setMenuClick(!menuClick)} /> */}
     </div>

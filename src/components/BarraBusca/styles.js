@@ -6,17 +6,20 @@ const tamanhoBorda = "5px";
 export const BarraBusca = styled.div`
   height: 50px;
   background: #51A018;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   display: flex;
   align-items: center;
   justify-items: center;
 
-  position: ${props => props.show ? "absolute" : "static"};
+  transition-duration: 0.4s;
+  transition-property:width;
 
-  right: ${props => props.show ? "0" : "auto"};
+  position: ${props => props.show ? "absolute" : ""};
 
-  width: ${props => props.show ? "calc(100vw - 190px)" : "100vw"};
+  right: ${props => props.show ? "0" : ""};
+
+  width: ${props => props.show ? "calc(100% - 190px)" : "100vw"};
 `;
 
 export const Menu = styled(MdMenu)`
