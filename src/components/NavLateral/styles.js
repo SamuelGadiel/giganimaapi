@@ -1,25 +1,30 @@
 import styled from 'styled-components';
 
 export const NavBarLateral = styled.nav`
-  height: 100vh;
+  background-color: var(--navbar);
+  height: 100%;
   width: 190px;
-  background: var(--navbar);
-  position: fixed;
   
+  position: fixed;
   transition-duration: 0.6s;
 
+  z-index: 10;
+
+  box-shadow: ${props => props.show ? "0 0 15px black" : "none"};
+  
   transform: ${props => props.show ? "translateX(0)" : "translateX(-190px)"};
 `;
 
 export const Quadrado = styled.div`
-height: 108px;
-background: rgba(0, 0, 0, 0.2);
-margin-bottom: 32px;
-display: flex;
+  height: 108px;
+  background: var(--filtro);
+  margin-bottom: 32px;
+  display: flex;
 
-a{
-  display: contents;
-}
+  a{
+    display: contents;
+  }
+
 `;
 
 

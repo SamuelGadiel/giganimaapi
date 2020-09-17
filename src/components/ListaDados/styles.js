@@ -8,10 +8,10 @@ export const ItemsLista = styled.span`
   padding-top: 16px;
   padding-bottom: 16px;
 
-  color: var(--white);
+  color: white;
 
   &:hover{
-    background: var(--backEnd);
+    background: var(--verdeEscuro);
   }
 `;
 

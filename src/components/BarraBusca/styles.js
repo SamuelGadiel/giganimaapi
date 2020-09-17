@@ -5,14 +5,16 @@ const tamanhoBorda = "5px";
 
 export const BarraBusca = styled.div`
   height: 50px;
-  background: #51A018;
+  background: var(--verde);
 
   display: flex;
   align-items: center;
   justify-items: center;
 
-  position: fixed;
+  position: absolute;
   right: 0;
+
+  z-index: 4;
 
   transition-duration: 0.6s;
 
@@ -47,12 +49,12 @@ export const Input = styled.input`
   outline: none;
 
   &::placeholder{
-  color: #999;
+  color: var(--placeholder);
 }
 `;
 
 export const BotaoBusca = styled.button`
-  background: #efefef;
+  background: var(--cinzaClaro);
 
   display: flex;
   justify-content: center;
@@ -71,6 +73,6 @@ export const BotaoBusca = styled.button`
   transition-duration: 0.3s;
   
   &:hover{
-  background: #d1d1d1;
+  background: var(--cinzaMedio);
 }
 `;

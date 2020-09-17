@@ -3,16 +3,20 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.App{
-  overflow: hidden;
-}
 
 :root {
   font-size: 16px;
-  --backEnd: #118642;
+  --verde: #51a018;
+  --placeholder: #999;
+  --cinzaClaro: #efefef;
+  --cinzaMedio: #d1d1d1;
   --navbar:#4e3535;
-  --purple:#8318B4;
+  --verdeEscuro: #118642;
   --purpleDark:#36117E;
+
+  --filtro: rgba(0, 0, 0, 0.2);
+
+  /* --purple:#8318B4;
   --botaoBusca: #F3F9D2;
   --blueish:#2947a8;
   --primary: #2A7AE4;
@@ -21,7 +25,7 @@
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5; 
   --white: #FFFFFF;
-  --frontEnd: #6BD1FF;
+  --frontEnd: #6BD1FF; */
 }
 
 html,
