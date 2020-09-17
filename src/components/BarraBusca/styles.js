@@ -11,7 +11,7 @@ export const BarraBusca = styled.div`
   align-items: center;
   justify-items: center;
 
-  position: absolute;
+  position: fixed;
   right: 0;
 
   z-index: 4;
@@ -49,8 +49,8 @@ export const Input = styled.input`
   outline: none;
 
   &::placeholder{
-  color: var(--placeholder);
-}
+    color: var(--placeholder);
+  }
 `;
 
 export const BotaoBusca = styled.button`
@@ -72,7 +72,7 @@ export const BotaoBusca = styled.button`
 
   transition-duration: 0.3s;
   
-  &:hover{
+  &: hover{
   background: var(--cinzaMedio);
 }
 `;

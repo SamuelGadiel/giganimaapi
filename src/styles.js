@@ -14,3 +14,13 @@ export const Wrap = styled.div`
   visibility: ${props => props.show ? "" : "hidden"} ;
   
 `;
+
+export const Teste = styled.div`
+  background: white;
+  width: 200px;
+  height: 500px;
+
+  position:relative;
+  top:200px;
+
+`;

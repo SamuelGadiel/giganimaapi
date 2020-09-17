@@ -15,17 +15,6 @@
   --purpleDark:#36117E;
 
   --filtro: rgba(0, 0, 0, 0.2);
-
-  /* --purple:#8318B4;
-  --botaoBusca: #F3F9D2;
-  --blueish:#2947a8;
-  --primary: #2A7AE4;
-  --black: #000000;
-  --blackLighter: #9E9E9E;
-  --grayLight: #F5F5F5;
-  --grayMedium: #e5e5e5; 
-  --white: #FFFFFF;
-  --frontEnd: #6BD1FF; */
 }
 
 html,
@@ -36,9 +25,14 @@ body {
 
 body{
   background: var(--purpleDark);
+  
 }
 
 a {
   color: inherit;
   text-decoration: none;
-} 
+}
+
+.App{
+  display: flex;
+}
