@@ -12,13 +12,16 @@ export const BarraBusca = styled.div`
   justify-items: center;
 
   position: fixed;
+  top: 0;
   right: 0;
 
   z-index: 4;
 
-  transition-duration: 0.6s;
+  transition: width 0.6s, transform 0.3s;
 
-  width: ${props => props.show ? "calc(100% - 190px)" : "100%"};
+  width: ${props => props.showMenu ? "calc(100% - 190px)" : "100%"};
+  transform: ${props => props.showBusca ? "" : "translateY(-50px)"};
+  
 `;
 
 
@@ -72,7 +75,7 @@ export const BotaoBusca = styled.button`
 
   transition-duration: 0.3s;
   
-  &: hover{
-  background: var(--cinzaMedio);
-}
+  &:hover{
+    background: var(--cinzaMedio);
+  }
 `;

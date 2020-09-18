@@ -6,7 +6,7 @@ import Anime from './components/Animes';
 
 
 function App() {
-  let [menuClick, setMenuClick] = useState(false);
+  const [menuClick, setMenuClick] = useState(false);
 
   return (
     <div className="App">
