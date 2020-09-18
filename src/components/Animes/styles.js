@@ -27,6 +27,10 @@ export const AreaAnime = styled.li`
 
   border-radius: 5%;
 
+  `;
+
+export const Margin = styled.div`
+
   margin: ${props => props.show ? "15px 15px" : "15px 20px"};
   transition: 0.6s;
 `;

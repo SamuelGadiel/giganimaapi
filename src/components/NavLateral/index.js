@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../../src/assets/img/Logo.png';
 import ListaDados from '../ListaDados';
 import { NavBarLateral, Quadrado, LogoImg } from './styles';
@@ -7,9 +8,9 @@ function NavLateral({ clicked }) {
   return (
     <NavBarLateral show={clicked}>
       <Quadrado>
-        <a href="/">
+        <Link to="/">
           <LogoImg src={Logo} alt="GiganimaLogo" />
-        </a>
+        </Link>
       </Quadrado>
       <ListaDados />
     </NavBarLateral>

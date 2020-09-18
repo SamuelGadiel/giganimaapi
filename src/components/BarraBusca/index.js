@@ -20,12 +20,16 @@ function Busca({ clicked, clickEvent }) {
 
     position = window.scrollY;
   }
-
+  // ALTERAR ESSA FUNÇÃO
+  function funcaoTeste(event) {
+    event.preventDefault();
+    console.log("Teste");
+  }
   return (
     <BarraBusca showMenu={clicked} showBusca={showBusca}>
       <Menu onClick={clickEvent} />
       <CampoBusca>
-        <Formulario action="">
+        <Formulario onSubmit={funcaoTeste}> {/*Função TESTE */}
           <Input placeholder="Buscar" type="text" />
           <BotaoBusca>
             <MdSearch />

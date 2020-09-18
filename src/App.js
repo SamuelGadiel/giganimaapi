@@ -1,19 +1,15 @@
-import React, { useState } from 'react';
-import NavLateral from './components/NavLateral';
-import Busca from './components/BarraBusca';
-import { Wrap } from './styles';
+import React from 'react';
 import Anime from './components/Animes';
+import PageDefault from './components/PageDefault';
 
 
 function App() {
-  const [menuClick, setMenuClick] = useState(false);
 
   return (
     <div className="App">
-      <NavLateral clicked={menuClick} />
-      <Busca clicked={menuClick} clickEvent={() => setMenuClick(!menuClick)} />
-      <Anime clicked={menuClick} />
-      <Wrap show={menuClick} onClick={() => setMenuClick(!menuClick)} />
+      <PageDefault>
+        <Anime />
+      </PageDefault>
     </div>
   );
 }
